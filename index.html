@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineria</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://diegovx.github.io">
+    
+  </head>
+  <body>
+    
+    <section class="form-register">
+      <h4>Formulario Registro Empresa</h4>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre Empresa">
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Localidad">
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese Estado">
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Registrar">
+    </section>
+    <hr>
+      <article class="jerarquia">
+        <table>
+          <tr>
+            <th colspan="3">Jerarquización Niveles</th>
+          </tr>
+          <tr>
+            <td class="td_coor">Tipos de Unidades</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Corporativo</td>
+            <td class="td_solo">5</td>
+          </tr>
+          <tr>
+            <td class="td_coor">Tipos de mineral</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Trend</td>
+            <td class="td_solo">2</td>
+          </tr>
+          <tr>
+            <td class="td_coor">Region</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Tipo de Operacion</td>
+            <td class="td_solo">4</td>
+          </tr>
+          <tr>
+            <td class="td_coor">Distancia</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </article>
+      <hr>
+      <section class="ponderacion">
+        <table>
+          <th colspan="9">Ponderacion de criterios</th>
+          <tr>
+            <th>Criterio</th>
+            <th>Tipo de Unidades</th>
+            <th>Corporativo</th>
+            <th>Tipo de mineral</th>
+            <th>Trend</th>
+            <th>Region</th>
+            <th>Tipo de Operacion</th>
+            <th>Distancia SLP (Km)</th>
+            <th>Puntos</th>
+        </tr>
+        <tr>
+          <td>Tipos de Unidades</td>
+          <td class="td_solo"></td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td class="td_coor">Corporativo</td>
+          <td class="td_coor">1</td>
+          <td class="td_solo"></td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">1</td>
+        </tr>
+        <tr>
+          <td>Tipos de mineral</td>
+          <td>1</td>
+          <td>1</td>
+          <td class="td_solo"></td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <td class="td_coor">Trend</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">0.5</td>
+          <td class="td_solo"></td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">4.5</td>
+        </tr>
+        <tr>
+          <td>Region</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td class="td_solo"></td>
+          <td>1</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td class="td_coor">Tipo de Operacion</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">1</td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">0</td>
+          <td class="td_solo"></td>
+          <td class="td_coor">0</td>
+          <td class="td_coor">2</td>
+        </tr>
+        <tr>
+          <td>Distancia SLP (Km)</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td class="td_solo"></td>
+          <td>6</td>
+        </tr>
+        </table>
+      </section>
+      <hr>
+      <section class="concentrado">
+        <table>
+          <th colspan="9">Concentrado de evaluacion</th>
+          <tr>
+            <th>Unidad Minero-Metalurgica</th>
+            <th>Tipo de Unidades</th>
+            <th>Corporativo</th>
+            <th>Tipo de mineral</th>
+            <th>Trend</th>
+            <th>Region</th>
+            <th>Tipo de Operacion</th>
+            <th>Distancia SLP (Km)</th>
+            <th>Puntaje final</th>
+          </tr>
+          <tr>
+            <td>Ponderacion</td>
+            <td>1</td>
+            <td>1</td>
+            <td>4.5</td>
+            <td>4.5</td>
+            <td>2</td>
+            <td>2</td>
+            <td>6</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td  class="td_coor">UNIDAD A</td>
+            <td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td>
+          </tr>
+          <td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td>
+          <tr>
+            <td>UNIDAD B</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          <tr>
+            <td class="td_coor">UNIDAD C</td>
+            <td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td>
+          </tr>
+          <td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td><td class="td_coor"></td>
+        </table>
+      </section>
+      <hr>
+      <section class="valorizacion">
+        <table>
+          <th colspan="7">valorizacion de Niveles</th>
+          <tr>
+            <th>Criterio</th>
+            <th>Ponderacion de Niveles</th>
+            <th>Puntaje</th>
+          </tr>
+          <tr>
+            <td class="td_solo">Tipos de Unidades</td>
+            <td>Mina Subterranea: 0.4 <hr><p>Mina a Cielo Abierto: 0.4</p><hr><p>Proceso de cierre: 0.1</p><hr><p>Refineria: 0.1</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Corporativo</td>
+            <td class="td_coor">Grupo compañia: 0.3 <hr><p>Pequeño minero: 0.1</p><hr><p>Inversion extranjera: 0.4</p><hr><p>Subsidios: 0.2</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="td_solo">Tipo de Minerales</td>
+            <td>Metalico: 0.5 <hr><p>No Metalico: 0.3</p><hr><p>Aleacion: 0.1</p><hr><p>Canteras: 0.1</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Trend</td>
+            <td class="td_coor">Cu-Mo-Au: 0.2 <hr><p>Au-Ag-Cu: 0.2</p><hr><p>Zn-Pb-Ag-Cu: 0.2</p><hr><p>Ag-Zn-Cn-Pb: 0.2</p><hr><p>Basicos Preciosos: 0.1</p><hr><p>Deposito Fe: 0.1</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="td_solo">Region</td>
+            <td>Noreste: 0.05 <hr><p>Occidente: 0.1</p><hr><p>Norte: 0.2</p><hr><p>Centro Norte: 0.25</p><hr><p>Centro Oriente: 0.25</p><hr><p>Centro Occidente: 0.1</p><hr><p>Sur: 0.05</p></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tipo de Operacion</td>
+            <td class="td_coor">Minado Subterraneo: 0.4 <hr><p>Exploracion a Cielo Abierto: 0.4</p><hr><p>Metalurgia: 0.2</p>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="td_solo">Distancia SLP (Km)</td>
+            <td>Mayor o igual a 645: 0.4 <hr><p>Menor que 645 Norte: 0.3</p><hr><p>Menor que 645 Sur: 0.2</p><hr><p>Baja California: 0.05</p><hr><p>Peninsula: 0.05</p></td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+  </body>
+</html>
